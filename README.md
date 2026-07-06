@@ -1,30 +1,30 @@
-**Parents Reporting Job Changes Due to Child Care Problems (NSCH 2024)**
+# **Parents Reporting Job Changes Due to Child Care Problems (NSCH 2024)**
 
-**Author: Carter Nesmith**
+## **Author: Carter Nesmith**
 
-**Last Updated: July 2026**
+#### **Last Updated: July 2026**
 
 This repository contains code and outputs for estimating the number of parents reporting job changes due to problems with child care, using the 2024 National Survey of Children’s Health (NSCH). Estimates are produced at the state level using survey-weighted data.
 
-**Overview**
+### **Overview**
 
 This analysis uses the 2024 NSCH topical file to measure whether parents reported changing or leaving a job due to child care-related problems. The dataset is weighted using the NSCH survey design to produce population-representative estimates.
 
 
 **The code:**
 
-Imports NSCH 2024 microdata
+1. Imports NSCH 2024 microdata
 
-Applies survey weights and design variables
+2. Applies survey weights and design variables
 
-Constructs a weighted state-level tabulation of job change responses
+3. Constructs a weighted state-level tabulation of job change responses
 
-Merges results with state FIPS identifiers
+4. Merges results with state FIPS identifiers
 
-Produces a final wide-format table with Yes/No counts by state
+5. Produces a final wide-format table with Yes/No counts by state
 
 
-**Data Sources**
+### **Data Sources**
 
 Dataset	Description	File
 National Survey of Children’s Health (2024 Topical File)	Individual-level survey microdata containing child and household characteristics, including employment disruptions due to child care problems	nsch_2024e_topical.dta
@@ -32,7 +32,7 @@ National Survey of Children’s Health (2024 Topical File)	Individual-level surv
 Note: The NSCH data file must be downloaded separately from the NSCH Data Resource Center and stored locally. It is not included in the repository due to size and data use restrictions.
 
 
-**Methodology**
+### **Methodology**
 
 Data import — The NSCH 2024 Stata .dta file is imported into R using the haven package.
 
@@ -53,7 +53,7 @@ State labeling — Numeric FIPS codes are matched to state names using a lookup 
 Reshaping output — The final dataset is pivoted into wide format, producing separate columns for “Yes” and “No” responses.
 
 
-**Repository Structure**
+### **Repository Structure**
 
 ├── analysis.R                       # Main analysis script
 
@@ -66,7 +66,7 @@ Reshaping output — The final dataset is pivoted into wide format, producing se
 └── README.md
 
 
-**Output Files**
+### **Output Files**
 
 jobchange_table_wide.xlsx
 
@@ -78,7 +78,7 @@ Yes	Weighted count of parents reporting job change due to child care problems
 No	Weighted count of parents not reporting job change due to child care problems
 
 
-**Requirements**
+### **Requirements**
 
 *R Packages*
 
@@ -93,7 +93,7 @@ tidyr
 writexl
 
 
-**Notes**
+### **Notes**
 
 Survey weights (fwc) are applied to produce population-representative estimates.
 
@@ -102,12 +102,12 @@ Standard NSCH survey design structure is used for variance estimation.
 All results are state-level aggregates derived from individual survey responses.
 
 
-**Geographic Scope**
+#### **Geographic Scope**
 
 All 50 U.S. states and Washington, D.C. are included in the analysis using FIPS state identifiers from the NSCH public-use file.
 
 
-**Data Access Requirements**
+### **Data Access Requirements**
 
 
 To run this analysis, users must:
@@ -121,6 +121,6 @@ setwd("YOUR/LOCAL/PATH/HERE")
 
 or directly reference the file path in read_dta().
 
-Contact
+**Contact**
 
 For questions about the code or methodology, contact Carter Nesmith.
