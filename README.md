@@ -1,4 +1,4 @@
-# **Parents Reporting Job Changes Due to Child Care Problems (NSCH 2024)**
+# **Parents Reporting Job Changes Due to Child Care Problems**
 
 ## **Author: Carter Nesmith**
 
