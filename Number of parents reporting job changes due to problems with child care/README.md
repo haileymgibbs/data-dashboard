@@ -86,23 +86,15 @@ Round the number's up to the nearest whole number
 
 *R Packages*
 
-haven
-
-dplyr
-
-survey
-
-tidyr
-
-writexl
-
+- haven
+- dplyr
+- survey
+- tidyr
+- writexl
 
 ### **Notes**
 
-Survey weights (fwc) are applied to produce population-representative estimates.
-
-Standard NSCH survey design structure is used for variance estimation.
-
+Survey weights (fwc) are applied to produce population-representative estimates. Standard NSCH survey design structure is used for variance estimation.
 All results are state-level aggregates derived from individual survey responses.
 
 
@@ -116,15 +108,10 @@ All 50 U.S. states and Washington, D.C. are included in the analysis using FIPS 
 
 To run this analysis, users must:
 
-Download the NSCH 2024 topical Stata file (nsch_2024e_topical.dta)
-
-Store it in a local directory
-
-Update the file path in the script or set a working directory:
-setwd("YOUR/LOCAL/PATH/HERE")
-
-or directly reference the file path in read_dta().
+- Download the NSCH 2024 topical Stata file (nsch_2024e_topical.dta)
+- Store it in a local directory
+- Update the file path in the script or set a working directory: setwd("YOUR/LOCAL/PATH/HERE") or directly reference the file path in read_dta().
 
 **Contact**
 
-For questions about the code or methodology, contact Carter Nesmith.
+For questions about the code or methodology, contact Carter Nesmith or Hailey Gibbs (hgibbs@americanprogress.org)
