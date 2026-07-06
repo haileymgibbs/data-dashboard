@@ -72,10 +72,14 @@ jobchange_table_wide.xlsx
 
 State-level weighted estimates of parental job changes due to child care problems.
 
-Column	Description
-state	State name
-Yes	Weighted count of parents reporting job change due to child care problems
-No	Weighted count of parents not reporting job change due to child care problems
+**Column	Description**
+state = State name
+
+Yes =	Weighted count of parents reporting job change due to child care problems
+
+No =	Weighted count of parents not reporting job change due to child care problems
+
+Round the number's up to the nearest whole number
 
 
 ### **Requirements**
